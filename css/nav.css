@@ -1,0 +1,95 @@
+.nav{
+    background-color: rgb(0 0 0 / 57%);
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 6rem;
+    gap: 10rem;
+}
+.nav__logo{
+    font-weight: bold;
+    font-size: 3rem;
+    color: #e1c50d;
+}
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    position: relative;
+}
+.nav__link{
+    color: azure;
+    transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    line-height: 8vh;
+}
+.nav__item:hover .nav__link{
+    color: #e1c50d;
+}
+main h1{
+    text-align: center;
+    padding: 15rem;
+}
+.nav ul ul{
+    transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    position: absolute;
+    background-color: antiquewhite;
+    border-radius: 0.3rem;
+    top: 5.9rem;
+    width: fit-content;
+    opacity: 0;
+    visibility: hidden;
+}
+.navItem__list li{ 
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+.navItem__list li:hover{ 
+    cursor: pointer;
+    background: #b7af97;
+}
+.navItem__list li a{
+    color: #000000ad;;
+} 
+.navItem__list li:not(:last-child){
+    border-bottom: 0.1rem solid #79554852;
+ }
+.navItem__listNest{
+    position: absolute;
+    background-color: wheat;
+    border-radius: 0.3rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 0rem !important;
+    right: -9.7rem;
+    
+}
+ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+.navItem__list span{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+@media all and (max-width:968px){
+    .nav {
+        height: 19vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+}
